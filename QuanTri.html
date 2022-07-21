@@ -1,0 +1,873 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/img/icon-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carashop - Máy ảnh chính hãng</title>
+    <meta name="keywords" content="Máy ảnh Sony">
+    <meta name="description" content="Carashop - Chuyên máy ảnh và phụ kiện máy ảnh - Chính hãng">
+    <meta property="og:title" content="Carashop - Máy ảnh chính hãng">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/boostraps/bootstrap.css">
+    <link href="/css/boostraps/sb-admin-2.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/QuanTri.css">
+
+
+
+</head>
+
+<body>
+
+    <section class="Header container">
+        <div class="header">
+            <header class="navbar navbar-dark flex-md-nowrap p-0 shadow">
+                <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/Index.html"><img src="/img/logo.jpg" width="100%" height="45px" alt=""></a>
+                <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <input class="form-control form-control-dark w-100" height="50px" type="text" placeholder="Nhập từ khóa" aria-label="Search">
+                <div class="navbar-nav">
+                    <div class="nav-item text-nowrap">
+                        <a class="Out" style="padding: 10px 5px; color:black;" href="#">Đăng xuất</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
+    <section class="Main container">
+        <section class="col-lg-2 SideBar">
+            <a href="/" class=" link-dark text-decoration-none " style="text-align: center;">
+                <h2 style="font-weight: 550; color: #fff;margin: 10px 0;"> Menu</h2>
+            </a>
+            <div class="sidebar" style="height: 1020px;">
+                <ul class="list-unstyled ps-0 list1">
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" role="presentation" data-bs-toggle="collapse" data-bs-target="#home-collapse1" aria-expanded="true">
+                        <i class="fa fa-user" style="margin-right: 5px;"></i>
+                            <a href="#QuanTri" aria-controls="home" role="tab" data-toggle="tab">Dashboard</a>
+                        </button>
+                        <div class="collapse show " id="home-collapse1">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" role="tablist">
+                                <li role="presentation active"><a href="#QuanTri" aria-controls="home" role="tab" data-toggle="tab">Dashboard Finance</a></li>
+                                <li><a href="/404.html">Dashboard E-Commerce</a></li>
+                                <li><a href="/404.html">Dashboard Sale</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse2" aria-expanded="false">
+                            <i class="fa fa-cog" style="margin-right: 5px;"></i>
+                            <a href="#ThongKe" aria-controls="home" role="tab" data-toggle="tab">Manager</a>
+                        </button>
+                        <div class="collapse" id="dashboard-collapse2">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                                <li role="presentation "><a href="#NhanSu" aria-controls="home" role="tab" data-toggle="tab">Nhân sự</a></li>
+                                <li role="presentation"><a href="#Product" aria-controls="profile" role="tab" data-toggle="tab">Sản phẩm</a></li>
+                                <li><a href="/404.html" class="link-dark rounded">Doanh thu</a></li>
+                                <li><a href="/404.html" class="link-dark rounded">Content</a></li>
+                                <li><a href="/404.html" class="link-dark rounded">Tin tức</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse3" aria-expanded="false">
+                        <i class="fas fa-toolbox" style="margin-right: 5px;"></i>
+                        Form
+                        </button>
+                        <div class="collapse" id="orders-collapse3">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="/404.html" class="link-dark rounded">Form Đăng ký</a></li>
+                                <li><a href="/404.html" class="link-dark rounded">Form Đăng nhập</a></li>
+                                <li><a href="/404.html" class="link-dark rounded">Form Thông tin</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse4" aria-expanded="false">
+                        <i class="fa fa-envelope" style="margin-right: 5px;"></i>
+                        Mail
+                        </button>
+                        <div class="collapse" id="account-collapse4">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="/404.html" class="link-dark rounded">Mail Detail</a></li>
+                                <li><a href="/404.html" class="link-dark rounded">Mail Compose</a></li>
+                                <li><a href="/404.html" class="link-dark rounded">Message Chat</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse5" aria-expanded="false">
+                        <i class="fas fa-shipping-fast" style="margin-right: 5px;"></i>
+                        Orders
+                        </button>
+                        <div class="collapse" id="account-collapse5">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="/404.html" class="link-dark rounded">New</a></li>
+                                <li><a href="/404.html" class="link-dark rounded">Prossesed</a></li>
+                                <li><a href="/404.html" class="link-dark rounded">Shipped</a></li>
+                                <li><a href="/404.html" class="link-dark rounded">Returned</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="dropdown mt-0 account">
+                <a href="#" class="  link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong style="color: #fff;">ThanhDat</strong>
+                </a>
+                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                    <li><a class="dropdown-item" href="/404.html">Project mới</a></li>
+                    <li><a class="dropdown-item" href="/404.html">Cài đặt</a></li>
+                    <li><a class="dropdown-item" href="/404.html">Thông tin</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#" onclick="Out()">Đăng xuất</a></li>
+                    <script>
+                        function Out() {
+                            localStorage.removeItem("username");
+                            localStorage.removeItem("password");
+                            location.href = "/Index.html";
+                        }
+                    </script>
+                </ul>
+            </div>
+        </section>
+        <section class="col-lg-10">
+            <div class="tab-content">
+
+                <div role="tabpanel" class="tab-pane active" id="QuanTri">
+                    <section>
+                        <div id="content-wrapper" class="d-flex flex-column">
+                            <!-- Main Content -->
+                            <div id="content">
+                                <!-- Begin Page Content -->
+                                <div class="container-fluid">
+                                    <!-- Page Heading -->
+                                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                        <h1 class="h3 mb-0 text-gray-800">Biểu đồ theo dõi doanh thu</h1>
+                                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                            class="fas fa-download fa-sm text-white-50"></i> Tải excel</a>
+                                    </div>
+                                    <!-- Content Row -->
+                                    <div class="row">
+                                        <!-- Earnings (Monthly) Card Example -->
+                                        <div class="col-xl-3 col-md-6 mb-4">
+                                            <div class="card border-left-primary shadow h-100 py-2">
+                                                <div class="card-body">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col mr-2">
+                                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                                Doanh thu hằng tháng</div>
+                                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Earnings (Monthly) Card Example -->
+                                        <div class="col-xl-3 col-md-6 mb-4">
+                                            <div class="card border-left-success shadow h-100 py-2">
+                                                <div class="card-body">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col mr-2">
+                                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                                Doanh thu hằng năm</div>
+                                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Earnings (Monthly) Card Example -->
+                                        <div class="col-xl-3 col-md-6 mb-4">
+                                            <div class="card border-left-info shadow h-100 py-2">
+                                                <div class="card-body">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col mr-2">
+                                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Công việc
+                                                            </div>
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col-auto">
+                                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="progress progress-sm mr-2">
+                                                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Pending Requests Card Example -->
+                                        <div class="col-xl-3 col-md-6 mb-4">
+                                            <div class="card border-left-warning shadow h-100 py-2">
+                                                <div class="card-body">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <div class="col mr-2">
+                                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                                Yêu cầu cần xử lý</div>
+                                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Content Row -->
+
+                                    <div class="row">
+
+                                        <!-- Area Chart -->
+                                        <div class="col-xl-8 col-lg-7">
+                                            <div class="card shadow mb-4">
+                                                <!-- Card Header - Dropdown -->
+                                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                    <h6 class="m-0 font-weight-bold text-primary">Tổng thu nhập trong tháng</h6>
+                                                    <div class="dropdown no-arrow">
+                                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- Card Body -->
+                                                <div class="card-body">
+                                                    <div class="chart-area">
+                                                        <canvas id="myAreaChart"></canvas>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Pie Chart -->
+                                        <div class="col-xl-4 col-lg-5">
+                                            <div class="card shadow mb-4">
+                                                <!-- Card Header - Dropdown -->
+                                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                    <h6 class="m-0 font-weight-bold text-primary">Nguồn doanh thu</h6>
+                                                    <div class="dropdown no-arrow">
+                                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- Card Body -->
+                                                <div class="card-body">
+                                                    <div class="chart-pie pt-4 pb-2">
+                                                        <canvas id="myPieChart"></canvas>
+                                                    </div>
+                                                    <div class="mt-4 text-center small">
+                                                        <span class="mr-2">
+                                                            <i class="fas fa-circle text-primary"></i> Direct
+                                                        </span>
+                                                        <span class="mr-2">
+                                                            <i class="fas fa-circle text-success"></i> Social
+                                                        </span>
+                                                        <span class="mr-2">
+                                                            <i class="fas fa-circle text-info"></i> Referral
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Content Row -->
+                                    <div class="row">
+
+                                        <!-- Content Column -->
+                                        <div class="col-lg-6 mb-4">
+
+                                            <!-- Project Card Example -->
+                                            <div class="card shadow mb-4">
+                                                <div class="card-header py-3">
+                                                    <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="small font-weight-bold">Tạo server <span class="float-right">20%</span></h4>
+                                                    <div class="progress mb-4">
+                                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <h4 class="small font-weight-bold">Giới thiệu sản phẩm <span class="float-right">40%</span></h4>
+                                                    <div class="progress mb-4">
+                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <h4 class="small font-weight-bold">Chỉnh sửa database <span class="float-right">60%</span></h4>
+                                                    <div class="progress mb-4">
+                                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <h4 class="small font-weight-bold">Chi tiết thanh toán <span class="float-right">80%</span></h4>
+                                                    <div class="progress mb-4">
+                                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <h4 class="small font-weight-bold">Đăng ký người dùng <span class="float-right">Complete!</span></h4>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Color System -->
+                                            <div class="card shadow mb-4">
+                                                <div class="card-header py-3">
+                                                    <h6 class="m-0 font-weight-bold text-primary">Danh sách người sáng lập</h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <li class="col-lg-6 mb-4"><img src="/img/Ava.png" alt=""> Nguyễn Thành Đạt (Admin)</li>
+                                                    <li class="col-lg-6 mb-4"><img src="/img/Ava.png" alt=""> Nguyễn Anh Tuấn (QTV)</li>
+                                                    <li class="col-lg-6 mb-4"><img src="/img/Ava.png" alt=""> Trần Hải Ngọc (QTV)</li>
+                                                    <li class="col-lg-6 mb-4"><img src="/img/Ava.png" alt=""> Lê Trọng Quyền (Coder)</li>
+                                                    <li class="col-lg-6 mb-4"><img src="/img/Ava.png" alt=""> Nguyễn Thành Đạt (Coder)</li>
+                                                    <li class="col-lg-6 mb-4"><img src="/img/Ava.png" alt=""> Lê Ngọc Vân Thảo (Marketing)</li>
+                                                    <li class="col-lg-6 mb-4"><img src="/img/Ava.png" alt=""> Nguyễn Hồng Hiếu (Marketing)</li>
+                                                    <li class="col-lg-6 mb-4"><img src="/img/Ava.png" alt=""> Phạm Lê Gia Hân (Manager)</li>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-lg-6 mb-4">
+
+                                            <!-- Illustrations -->
+                                            <div class="card shadow mb-4">
+                                                <div class="card-header py-3">
+                                                    <h6 class="m-0 font-weight-bold text-primary">Hình ảnh</h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="text-center">
+                                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 70%;" src="/img/ImgMinhHoa.jpg" alt="... " width="">
+                                                    </div>
+                                                    <p> Exceed Your Vision: Vượt quá tầm nhìn của bạn là câu slogan của chúng tôi, dẫn mọi người đến với thế giới mới lạ, đẹp đẽ, hãy trân trọng chúng tôi
+                                                    </p>
+                                                    <a target="_blank" rel="nofollow" href="/Index.html">Hãy ghé thăm chúng tôi &rarr;</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Approach -->
+                                            <div class="card shadow mb-4">
+                                                <div class="card-header py-3">
+                                                    <h6 class="m-0 font-weight-bold text-primary">Thời gian hoạt động</h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p> Hotline : 0938103176</p>
+                                                    <p>Địa chỉ hoạt động: 263/2 Ba Đình Phường 8 Quận 8 TP.HCM</p>
+                                                    <p>
+                                                        (Thứ 2-6 8:00 - 21:00 // Thứ 7 8:30-21:00 // Chủ Nhật 8:30-17:30 ) Fanpage: CaraShop
+                                                    </p>
+                                                    <p class="mb-0">Trước khi đến cửa hàng, hãy liên hệ chúng tôi để biết thêm thông tin chi tiết</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /.container-fluid -->
+
+                            </div>
+                            <!-- End of Main Content -->
+
+                            <!-- Footer -->
+                            <footer class="sticky-footer bg-white">
+                                <div class="container my-auto">
+                                    <div class="copyright text-center my-auto">
+                                        <span>Copyright &copy; Your Website 2021</span>
+                                    </div>
+                                </div>
+                            </footer>
+                            <!-- End of Footer -->
+
+                        </div>
+
+                    </section>
+                </div>
+
+                <div role="tabpanel" class="tab-pane " id="ThongKe">
+                    <section>
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                            <h1 class="h3 mb-0 text-gray-800">Thống kêasdasd</h1>
+                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Tải excel</a>
+                        </div>
+                        <!-- Bang row thong ke -->
+                        <div class="row">
+
+                            <!-- card nhân viên -->
+                            <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                    Nhân viên</div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">8</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-user-o fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-last">
+                                        <div class="content">
+                                            <span>
+                                                <a href="#NhanSu" aria-controls="home" role="tab" data-toggle="tab">Danh sách nhân viên</a>
+                                                    <i class="fa fa-arrow-circle-right"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- card sản phẩm -->
+                            <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                    Sản phẩm</div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">30</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-box fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-last">
+                                        <div class="content">
+                                            <span>
+                                                <a href="#Product" aria-controls="home" role="tab" data-toggle="tab">Danh sách sản phẩm
+                                                    <i class="fa fa-arrow-circle-right"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- card người dùng -->
+                            <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                    Tài khoản người dùng</div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-user-plus fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-last">
+                                        <div class="content">
+                                            <span>Danh sách người dùng</span>
+                                            <i class="fa fa-arrow-circle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- card nv nghỉ việc -->
+                            <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="card border-left-warning shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                    Nhân viên nghỉ việc</div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">2</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fa fa-chart-pie fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-last">
+                                        <div class="content">
+                                            <span>Danh sách nghỉ việc</span>
+                                            <i class="fa fa-arrow-circle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Danh sach nhan vien va chuc vu -->
+                        <div class="">
+                            <div class="col-lg-6 mb-4">
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">Danh sách nhân viên</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex search">
+                                            <div class="">
+                                                <span>
+                                                    Showasdasd
+                                                </span>
+                                                <select class="select">
+                                                    <option selected="selected">10</option>
+                                                    <option>20</option>
+                                                    <option>30</option>
+                                                    <option>40</option>
+                                                </select>
+                                                <span>entries</span>
+                                            </div>
+                                            <div class="">
+                                                <span>Search</span>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <table class="table">
+                                                <thead class="thead">
+                                                    <tr>
+                                                        <th scope="col">STT</th>
+                                                        <th scope="col">Mã nhân viên</th>
+                                                        <th scope="col">Tên nhân viên</th>
+                                                        <th scope="col">Nơi sinh</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="tbody dsNV">
+
+                                                </tbody>
+                                            </table>
+                                            <!-- js render -->
+                                        </div>
+                                        <div class="d-flex search">
+                                            <div class="Tong">
+
+                                            </div>
+                                            <div class="">
+                                                <div class="">
+                                                    <div class="toolbar">
+                                                        <button type="button" class="btn btn-default ">Trước</button>
+                                                        <button type="button" class="btn btn-default active">1</button>
+                                                        <button type="button" class="btn btn-default ">Sau</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">Danh sách chức vụ</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex search">
+                                            <div class="">
+                                                <span>
+                                                    Show
+                                                </span>
+                                                <select class="select">
+                                                    <option selected="selected">10</option>
+                                                    <option>20</option>
+                                                    <option>30</option>
+                                                    <option>40</option>
+                                                </select>
+                                                <span>entries</span>
+                                            </div>
+                                            <div class="">
+                                                <span>Search</span>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <table class="table">
+                                                <thead class="thead">
+                                                    <tr>
+                                                        <th scope="col">STT</th>
+                                                        <th scope="col">Mã chức vụ</th>
+                                                        <th scope="col">Tên nhân viên</th>
+                                                        <th scope="col">Chức vụ</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="tbody dsCV">
+
+                                                </tbody>
+                                            </table>
+                                            <!-- js render -->
+                                        </div>
+                                        <div class="d-flex search">
+                                            <div class="Tong2">
+
+                                            </div>
+                                            <div class="">
+                                                <div class="">
+                                                    <div class="toolbar">
+                                                        <button type="button" class="btn btn-default ">Trước</button>
+                                                        <button type="button" class="btn btn-default active">1</button>
+                                                        <button type="button" class="btn btn-default ">Sau</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Danh sach luong -->
+                        <div class="">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Danh sách lương tháng 7/2021</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex search">
+                                        <div class="">
+                                            <span>
+                                                Show
+                                            </span>
+                                            <select class="select">
+                                                <option selected="selected">10</option>
+                                                <option>20</option>
+                                                <option>30</option>
+                                                <option>40</option>
+                                            </select>
+                                            <span>entries</span>
+                                        </div>
+                                        <div class="">
+                                            <span>Search</span>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <table class="table">
+                                            <thead class="thead">
+                                                <tr>
+                                                    <th scope="col">STT</th>
+                                                    <th scope="col">Mã nhân viên</th>
+                                                    <th scope="col">Ảnh</th>
+                                                    <th scope="col">Tên nhân viên</th>
+                                                    <th scope="col">Lương tháng</th>
+                                                    <th scope="col">Ngày công</th>
+                                                    <th scope="col">Thực lãnh</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="tbody dsLuong">
+
+                                            </tbody>
+                                        </table>
+                                        <!-- js render -->
+                                    </div>
+                                    <div class="d-flex search">
+                                        <div class="Tong3">
+
+                                        </div>
+                                        <div class="">
+                                            <div class="">
+                                                <div class="toolbar">
+                                                    <button type="button" class="btn btn-default ">Trước</button>
+                                                    <button type="button" class="btn btn-default active">1</button>
+                                                    <button type="button" class="btn btn-default ">Sau</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="sticky-footer bg-white">
+                            <div class="container my-auto">
+                                <div class="copyright text-center my-auto">
+                                    <span>Copyright &copy; Your Website 2021</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </section>
+
+                </div>
+
+                <div id="NhanSu" role="tabpanel" class="tab-pane ">
+                    <div class="">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Danh sách nhân viên</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex search">
+                                    <div class="">
+                                        <span>
+                                            Show
+                                        </span>
+                                        <select class="select">
+                                            <option selected="selected">10</option>
+                                            <option>20</option>
+                                            <option>30</option>
+                                            <option>40</option>
+                                        </select>
+                                        <span>entries</span>
+                                    </div>
+                                    <div class="">
+                                        <span>Search</span>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <table class="table">
+                                        <thead class="thead">
+                                            <tr>
+                                                <th scope="col">STT</th>
+                                                <th scope="col">Mã nhân viên</th>
+                                                <th scope="col">Ảnh</th>
+                                                <th scope="col">Tên nhân viên</th>
+                                                <th scope="col">Ngày sinh</th>
+                                                <th scope="col">Nơi sinh</th>
+                                                <th scope="col">CMND</th>
+                                                <th scope="col">Tình trạng</th>
+                                                <th scope="col">Sửa</th>
+                                                <th scope="col">Xóa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody dsNhanVien">
+
+                                        </tbody>
+                                    </table>
+                                    <!-- js render -->
+                                </div>
+                                <div class="d-flex search">
+                                    <div class="Tong4">
+
+                                    </div>
+                                    <div class="">
+                                        <div class="">
+                                            <div class="toolbar">
+                                                <button type="button" class="btn btn-default ">Trước</button>
+                                                <button type="button" class="btn btn-default active">1</button>
+                                                <button type="button" class="btn btn-default ">Sau</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane " id="Product">
+                    <div class="">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Danh sách sản phẩm</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex search">
+                                    <div class="">
+                                        <span>
+                                            Show
+                                        </span>
+                                        <select class="select">
+                                            <option selected="selected">10</option>
+                                            <option>20</option>
+                                            <option>30</option>
+                                            <option>40</option>
+                                        </select>
+                                        <span>entries</span>
+                                    </div>
+                                    <div class="">
+                                        <span>Search</span>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <table class="table">
+                                        <thead class="thead">
+                                            <tr>
+                                                <th scope="col">STT</th>
+                                                <th scope="col">Mã sản phẩm</th>
+                                                <th scope="col">Ảnh</th>
+                                                <th scope="col">Tên sản phẩm</th>
+                                                <th scope="col">Giá bán</th>
+                                                <th scope="col">Số lượng</th>
+                                                <th scope="col">Tình trạng</th>
+                                                <th scope="col">Sửa</th>
+                                                <th scope="col">Xóa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody dsProduct">
+
+                                        </tbody>
+                                    </table>
+                                    <!-- js render -->
+                                </div>
+                                <div class="d-flex search">
+                                    <div class="Tong4">
+
+                                    </div>
+                                    <div class="">
+                                        <div class="">
+                                            <div class="toolbar">
+                                                <button type="button" class="btn btn-default ">Trước</button>
+                                                <button type="button" class="btn btn-default active">1</button>
+                                                <button type="button" class="btn btn-default ">Sau</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </section>
+
+
+    <script src="/js/boostraps/jquery.min.js"></script>
+    <script src="/js/boostraps/bootstrap.bundle.min.js"></script>
+    <script src="/js/boostraps/tab.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="/js/boostraps/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="/js/boostraps/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="/js/boostraps/chart-area-demo.js"></script>
+    <script src="/js/boostraps/chart-pie-demo.js"></script>
+    <script src="/js/product/Product.js"></script>
+    <script src="/js/product/QuanTri.js"></script>
+
+</body>
+
+</HTML>

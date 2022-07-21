@@ -1,0 +1,520 @@
+/* ---- header ---- */
+.container{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+i,img{
+    cursor: pointer;
+    object-fit: cover;
+}
+/* ---- Quảng cáo ---- */
+
+.background{
+    position: fixed;
+    z-index: 90;
+    padding: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.background::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.background{
+    padding: 0;
+    margin: 0;
+}
+.background button{
+    font-size: 50px;
+    color:red;
+    padding:0;
+    opacity: 0.9;
+}
+.background img{
+    filter: brightness(1); 
+    inset: 12.5% 25% 0;
+}
+
+
+.Header{
+    border: 1px solid #ccc;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 1;
+    flex-direction: row;
+}
+/* --- Sign Up --- */
+.SignUp ul, .follow ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.SignUp ul li{
+    margin: 5px;
+}
+.SignUp ul li a{
+    color: #333333;
+    font-size: 13px;
+}
+.SignUp ul li a:hover{
+    color: black;
+}
+
+/* --- search --- */
+.search-input{
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.search-input input{
+    height: 25px;
+    width: 100%;
+    padding: 6px 12px;
+    outline: none;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #555555;
+}
+.search-input .icon{
+    height: 25px;
+    width: 25px;
+    line-height: 22px;
+    position: absolute;
+    top: 0;
+    right:0;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    background-color: #eeeeee;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.search-input .autocom-box{
+    border: 1px solid #cccccc;
+    width: 95%;
+    max-height: 210px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none; 
+    position: absolute;
+    top: 23px;
+    z-index: 5555;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    
+}
+.search-input.active .autocom-box{
+    opacity: 1;
+    pointer-events: auto; 
+}
+.search-input.active .autocom-box li{
+    display: block;
+}
+.autocom-box li{
+    list-style: none;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+    display: none;
+}
+.autocom-box li:hover{
+    background-color: #efefef;
+}
+
+
+/* --- follow --- */
+.follow ul li{
+    margin: 10px;
+}
+.follow ul li i{
+    color: #333333;
+}
+.follow ul{
+    margin-left: 20px;
+}
+
+/* --- logo --- */
+.HeaderBar{
+    display: flex;
+    align-items: center;
+}
+.HeaderBar img{
+    height: 100px;
+}
+.LienHe ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.LienHe ul li{
+    font-size: 15x;
+}
+.LienHe ul li i{
+    font-size: 30px;
+}
+
+.GioHang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.GioHang .GioHangLink{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menu */
+
+.Menu-chose{
+    padding: 0;
+	background-color: rgb(27, 24, 24);
+}
+
+.navMenu{
+    margin: 0;
+	font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ .navMenu li{
+	color: white;
+	position: relative;
+    padding: 12px;
+}
+ .navMenu li >a{
+    color: #fff;
+}
+ .navMenu .navMenu2 li{
+    width: 200px;
+    padding: 5px 5px 5px 15px;
+    margin-left: 15px;
+	background-color: white;
+    border: 1px solid rgb(230, 207, 207);
+    cursor: pointer;    
+} 
+ .navMenu .navMenu2 li a{
+    color: black;
+}
+
+/* ------ hover ------- */
+
+ .navMenu > li:hover{
+    background-color: rgb(84, 84, 204);
+    transition: 0.4s;
+}
+.navMenu .navMenu2 > li:hover > a{
+	color: blueviolet;
+    transition: 0.4s;
+}
+
+/* Ẩn menu */
+.Menu-chose ul ul{
+	display: none;
+	position: absolute;
+    margin: 12px 0 0 -28px;
+}
+/* Hiện menu 2 */
+.Menu-chose ul li:hover > ul{
+	display: block;
+	z-index: 20;
+	position: absolute;
+}
+
+
+/* Slide */
+
+.BannerSlide{
+    padding-left: 0;
+}
+
+.slide{
+    margin-top: 0px;
+    padding-right: 0;
+}
+.carousel-control{
+    width: 70px;
+}
+.carousel-inner> .item > img{
+    object-fit: cover;
+    width: 100%;
+}
+.carousel-control {
+    width: 30px;
+}
+
+/* Banner slide */
+
+#toggle-menu,.btn-toggle-menu,
+.Logined{
+    display: none;
+}
+
+.btn-toggle-menu i{
+    font-size: 25px;
+    color: #fff;
+    margin: 5px 20px;
+    padding: 7px 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    line-height: 1;
+}
+@media screen and (max-width: 1200px){
+    .Phone,
+    .navMenu,
+    .banner,
+    .slide,
+    .khuyenmai,
+    .SignUp .mobi{
+        display: none;
+    }
+    .SignUp,.logo{
+        padding: 0;
+    }
+    .SignUp ul li{
+        margin: 0;
+    }
+    .Header{
+        flex-wrap: nowrap;
+    }
+    .input-group{
+        display: unset;
+    }
+    .input-group .form-control{
+        width: 80%;
+    }
+    .input-group .input-group-addon{
+        padding: 5px;
+        width: 30px;
+    }
+    .navMenu{
+        display: none; 
+    }
+    .btn-toggle-menu{
+        display: unset;
+    }
+    #toggle-menu:checked + .navMenu{
+        display:block;
+        transition: 0.4s;
+        width: 100%;
+    }
+    .HeaderBar{
+        justify-content: space-between;
+    }
+    .input-email{
+        width: 70%;
+        margin: 0 15%;
+    }
+
+}
+@media screen and (max-width:450px) {
+
+    .follow{
+        display: none;
+    }
+}
+
+
+
+.hotline-phone-ring-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+    }
+    .hotline-phone-ring {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    z-index: 11;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transition: visibility .5s;
+    left: 0;
+    bottom: 0;
+    display: block;
+    }
+    .hotline-phone-ring-circle {
+    width: 85px;
+    height: 85px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid #e60808;
+    -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: 0.5;
+    }
+    .hotline-phone-ring-circle-fill {
+    width: 55px;
+    height: 55px;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    background-color: rgba(230, 8, 8, 0.7);
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    }
+    .hotline-phone-ring-img-circle {
+    background-color: #e60808;
+    width: 33px;
+    height: 33px;
+    top: 37px;
+    left: 37px;
+    position: absolute;
+    background-size: 20px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .hotline-phone-ring-img-circle .pps-btn-img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    }
+    .hotline-phone-ring-img-circle .pps-btn-img img {
+    width: 20px;
+    height: 20px;
+    }
+    .hotline-bar {
+    position: absolute;
+    background: rgb(49, 74, 166);
+    border-radius: 3px;
+    padding: 0 15px 0 0;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    z-index: 9;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px !important;
+    /* width: 175px !important; */
+    left: 33px;
+    bottom: 37px;
+    }
+    .hotline-bar > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 50px;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-family: Arial;
+    }
+    .hotline-bar > a:hover,
+    .hotline-bar > a:active {
+    color: #fff;
+    }
+    @-webkit-keyframes phonering-alo-circle-anim {
+    0% {
+    -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+    -webkit-opacity: 0.1;
+    }
+    30% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    -webkit-opacity: 0.5;
+    }
+    100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -webkit-opacity: 0.1;
+    }
+    }
+    @-webkit-keyframes phonering-alo-circle-fill-anim {
+    0% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.6;
+    }
+    50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    opacity: 0.6;
+    }
+    100% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.6;
+    }
+    }
+    @-webkit-keyframes phonering-alo-circle-img-anim {
+    0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    }

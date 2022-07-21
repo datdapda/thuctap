@@ -1,0 +1,351 @@
+.hidden{
+    display: none;
+}
+
+/* --------- Khung link ------------ */
+.link{
+    display: flex;
+}
+.link li{
+    margin: 10px 3px;
+    font-size: 15px;
+}
+.link li a{
+    color: rgb(29, 22, 22);
+    font-weight: 550;
+}
+
+/* --------- SideBar ------------ */
+
+
+.sidebarAndproducts{
+    padding: 0;
+}
+.sidebar{
+    margin-bottom: 15px;
+}
+.sidebar > ul, .gia > ul, .ThuongHieu{
+    border: 1px solid #e9e9e9;
+
+}
+.SideBar{
+    padding: 0;
+}
+.sidebar h4{
+    padding: 12px;
+    text-align: left;
+    background-color: #e76d66;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+.list1 li{
+    margin: 10px;
+}
+
+.ThuongHieu{
+    height: 250px;
+    overflow: auto;
+}
+.ThuongHieu li{
+    padding: 10px 20px;
+}
+.ThuongHieu li a:hover{
+    color: rgb(89, 147, 235);
+}
+
+/* introduc */
+
+.Introduc{
+    display: flex;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    height: 350px;
+}
+
+.Introduc .item img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.item {
+    flex: 1;
+    transition: 0.4s linear;
+}
+.item:hover{
+    flex-basis: 65%;
+}
+
+
+/* Loc theo gia */
+
+
+.ChoseThongTin{
+    display: flex;
+    flex-direction: column;
+}
+.ChoseThongTin li{
+    margin: 5px 10px;
+    font-size: 14px;
+}
+.ChoseThongTin li label{
+    cursor: pointer;
+    margin: 3px 10px;
+}
+.ChoseThongTin li label:hover{
+    color: rgb(145, 82, 204);
+}
+
+
+/* ---------------- Header product --------------- */
+
+
+.listGroupProduct{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listGroupProduct ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.listGroupProduct ul li{
+    margin: 10px 7px;
+}
+.listGroupProduct ul li a{
+    padding: 7px;
+    border: 1px solid rgb(43, 43, 201);
+    color: black;
+}
+
+.listGroupProduct ul li a:hover{
+    background-color: rgb(202, 197, 197);
+}
+.listGroupProduct ul li:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.listGroupProduct .col-lg-10{
+    padding:0;
+}
+
+
+/* ------------- do khoang cach --------------- */
+
+.row{
+    max-height: 1285px;
+    overflow: hidden;
+}
+.cards {
+	--spacing: 15px;
+	--columns: 4;
+	display: flex;
+	padding: 0;
+	flex-wrap: wrap;
+	margin-left: calc(-1 * var(--spacing)/2);
+    margin-top: var(--spacing);
+}
+
+@media screen and (min-width: 361px) and (max-width:776px){
+	.cards {
+		--spacing: 15px;
+		--columns: 2;
+	}
+}
+@media screen and (max-width:360px){
+	.cards{
+		--columns: 1;
+	}
+}
+
+
+
+.card-content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 7px;
+}
+.card-top {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.card-user, .info-card, .card-bottom {
+	margin-top: auto;
+	flex-shrink: 0;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* ------------- product --------------- */
+  
+.card {
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	width: calc(calc(100% / var(--columns)) - var(--spacing));
+	margin-left: var(--spacing);
+	margin-bottom: var(--spacing);
+	box-shadow: 0 0 5px gray;
+}
+.card .img-product {
+	height: 150px;
+	width: 100%;
+	object-fit: cover;
+}
+.card:hover{
+	transition: 0.4s;
+	transform: scale(1.03);
+}
+
+  /* ------- Title  --------- */
+
+.card-title {
+	font-weight: 500;
+	margin: 15px 0;
+	word-break: break-all;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+	font-size: 15px;
+}
+
+
+
+/* ------- Giá tiền --------- */
+
+.card-user {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card-user span{
+    font-size: 22px;
+    font-weight: 600;
+	color: rgb(189, 76, 76);
+}
+
+/* ------- Nut Order  ---------- */
+
+.card button {
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 7px 10px;
+	margin: 5px;
+    border-radius: 10px;
+    background-color: #ff6651;
+    cursor: pointer;
+	border: 1px solid;
+}
+
+
+
+
+/* ---------- toolbar ------------ */
+.toolbarFooter{
+    display: flex;
+    margin: 10px 0px;
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.toolbarFooter ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toolbarFooter ul li{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #eee;
+    margin-left: 5px;
+    height: 34px;
+}
+.toolbarFooter ul li a{
+    border: 0px solid #ccc;
+    text-align: center;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+
+.toolbarFooter ul li a:hover{
+    background-color: #e6e6e6;
+}
+.nav .active{
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+
+.sidebarAndproducts{
+    position: relative;
+}
+#footerJS{
+    position: absolute;
+    left: 0;
+    right:0;
+}
+
+.main-product{
+    height: 1415px;
+}
+
+/* ---------- footer email ---------- */
+
+.email-feedback{
+    text-align: center;
+    background-color: #202c43;
+    color: #fff;
+    padding: 25px 0;
+}
+.input-email{
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* ------- footer feedback ------------ */
+
+.feed-back{
+    margin: 25px 0;
+}
+.feed-back h5{
+    border-bottom: 2px solid red;
+    font-weight: bold;
+}
+.feed-back .nav li{
+    margin-left: -15px;
+}
+
+/* ------------- footer info công ty ------------ */
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(61, 49, 49);
+    background-color: #202c43;
+    color: #fff;
+}
+
+@media screen and (max-width:970px){
+    .SideBar{
+        display: none;
+    }
+}
+

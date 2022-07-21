@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+
+<HEAD>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/img/icon-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carashop - Máy ảnh chính hãng</title>
+    <meta name="keywords" content="Máy ảnh Sony">
+    <meta name="description" content="Carashop - Chuyên máy ảnh và phụ kiện máy ảnh - Chính hãng">
+    <meta property="og:title" content="Carashop - Máy ảnh chính hãng">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/boostraps/bootstrap.css">
+
+    <link rel="stylesheet" href="/css/GioHang.css">
+    <link rel="stylesheet" href="/css/Header.css">
+    <link rel="stylesheet" href="/css/Index.css">
+    <link rel="stylesheet" href="/css/Group.css">
+
+
+
+
+</head>
+
+<body>
+    <section id="headerJS">
+    </section>
+    <section class="khungLink">
+        <div class="container">
+            <div class="linkChose">
+                <ul class="link">
+                    <li>
+                        <a href="/Index.html">Trang chủ</a>
+                        <i class="fa fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        <a href="/GioHang.html">Giỏ hàng</a>
+                        <i class="fa fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        <a href="/ThanhToan.html">Thanh toán</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section class="cart-gh">
+        <div class="Cart0 container">
+            <h4>Thông tin khách hàng</h4>
+            <form name="DangKy" action="#" method="post" onsubmit="return checkinfo()">
+                <div class="formThongTin">
+                    <fieldset class="table1">
+                        <form>
+                            <div class="col-lg-6">
+                                <input type="text" required="required" placeholder="Nhập họ tên" />
+                                <input type="text" required="required" placeholder="Nhập địa chỉ hiện tại" />
+                                <input type="tel" required="required" placeholder="Nhập số điện thoại" maxlength="10" />
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="email" required="required" placeholder="Nhập email" />
+                                <select class="select1" name="select">
+                                        <option selected="selected">Thành phố </option>
+                                        <option>Hồ Chí Minh</option>
+                                        <option>Hà Nội</option>
+                                        <option>An giang</option>
+                                        <option>Bà rịa - Vũng tàu</option>
+                                        <option>Bắc Ninh</option>
+                                        <option>Bắc Giang</option>
+                                        <option>Bình Dương</option>
+                                        <option>Bình Phước</option>
+                                        <option>Bình Định</option>
+                                        <option>Bình Thuận</option>
+                                        <option>Bình Thuận</option>
+                                    </select>
+                                <select class="select1" name="select">
+                                        <option selected="selected">Quận huyện </option>
+                                        <option>Quận 1</option>
+                                        <option>Quận 2</option>
+                                        <option>Quận 3</option>
+                                        <option>Quận 4</option>
+                                        <option>Quận 5</option>
+                                        <option>Quận 6</option>
+                                        <option>Quận 7</option>
+                                        <option>Quận 8</option>
+                                        <option>Quận 9</option>
+                                        <option>Quận 10</option>
+                                        <option>Quận 11</option>
+                                        <option>Quận 12</option>
+                                        <option>Quận Thủ đức</option>
+                                        <option>Quận Tân Phú</option>
+                                        <option>Quận Tân Bình</option>
+                                        <option>Quận Phú Thuận</option>
+                                        <option>Quận Phú Thuận</option>
+                                        <option>Quận Gò Vấp</option>
+                                        <option>Quận Bình Thạnh</option>
+                                        <option>Huyện Bình Chánh</option>
+                                        <option>Huyện Nhà Bè</option>
+                                        <option>Huyện Hóc Môn</option>
+                                    </select>
+                            </div>
+                            <div class="col-lg-12"><textarea name="description" value="" class="" placeholder="Ghi chú" style="width: 100%; margin: 0px; height: 32px;"></textarea></div>
+                        </form>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+        <div class="Cart1 container">
+            <h4>Hình thức thanh toán</h4>
+            <div class="ThanhToan col-lg-12">
+                <li>
+                    <input type="radio" name="ThanhToan" id="Bank">
+                    <label for="Bank">Chuyển khoản qua ngân hàng</label>
+                </li>
+                <li>
+                    <input type="radio" name="ThanhToan" id="TienMat">
+                    <label for="TienMat">Thanh toán bằng tiền mặt</label>
+                </li>
+            </div>
+        </div>
+        <div class="Cart container">
+            <h4>Thông tin đơn hàng</h4>
+            <div class="cart1" style="padding: 0;">
+                <div class="TenSP">
+                    <span class="col-lg-2">Ảnh</span>
+                    <span class="col-lg-5">Tên sản phẩm</span>
+                    <span class="col-lg-3">Số lượng</span>
+                    <span class="col-lg-2">Đơn giá</span>
+                </div>
+                <hr>
+                <div class="cart-items2">
+
+                </div>
+
+
+            </div>
+            <div class="XacNhan">
+                <div class="TienDonHang">
+                    <button type="button" formaction="/Index.html" onclick="CheckThanhCong()">
+                            Xác nhận và đặt hàng
+                        </button>
+
+                    <script>
+                        function CheckThanhCong() {
+                            window.alert("Bạn đã đặt hàng thành công");
+                            window.location = "/Index.html";
+                            localStorage.removeItem("CART");
+
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="khuyenmai">
+        <div class="container KhuyenMai" style="padding-top: 20px; padding-bottom: 20px;">
+            <div class="row QC">
+                <span class="col-lg-6" style="padding-right: 10px ;padding-left: 0;">
+                        <img src="/img/KM1.jpg" alt="" width="100%" height="300px">
+                    </span>
+                <span class="col-lg-6" style="padding-left: 10px; padding-right: 0;">
+                        <img src="/img/KM2.jpg" alt="" width="100%" height="300px">
+                    </span>
+            </div>
+        </div>
+    </section>
+    <section id="footerJS">
+    </section>
+    <script>
+        const porductsListEl = document.querySelector(".products-list");
+        const seeMoreBtn = document.querySelector(".see-more-btn");
+    </script>
+
+    <script src="/js/boostraps/bootstrap.bundle.min.js"></script>
+    <script src="/js/boostraps/jquery.min.js"></script>
+    <script src="/js/boostraps/modal.js"></script>
+
+    <script src="/js/product/header.js"></script>
+    <script src="/js/product/ThanhToan.js"></script>
+    <script src="/js/product/Search.js"></script>
+    <script src="/js/product/Account.js"></script>
+</body>
+
+</html>

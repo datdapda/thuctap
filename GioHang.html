@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+    <HEAD>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="/img/icon-logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carashop - Máy ảnh chính hãng</title>
+        <meta name="keywords" content="Máy ảnh Sony">
+        <meta name="description" content="Carashop - Chuyên máy ảnh và phụ kiện máy ảnh - Chính hãng">
+        <meta property="og:title" content="Carashop - Máy ảnh chính hãng">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="../css/boostraps/bootstrap.css">
+        
+        <link rel="stylesheet" href="../css/GioHang.css">
+        <link rel="stylesheet" href="../css/Header.css">
+        <link rel="stylesheet" href="../css/Index.css">
+        <link rel="stylesheet" href="../css/Group.css">
+        
+
+    
+    </head>
+    <body>
+        <section id="headerJS">
+        </section>
+        <section class="khungLink">
+            <div class="container">
+                <div class="linkChose">
+                    <ul class="link">
+                        <li>
+                            <a href="/index.html">Trang chủ</a>
+                            <i class="fa fa-chevron-right"></i>
+                        </li>
+                        <li>
+                            <a href="/GioHang.html">Giỏ hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        <section class="cart-gh">
+            <div class="Cart container">
+                <h3>Giỏ Hàng</h3>
+                <div class="cart1" style="padding: 0;">
+                    <div class="TenSP">
+                        <span class="col-lg-2">Ảnh</span>
+                        <span class="col-lg-5">Tên sản phẩm</span>
+                        <span class="col-lg-3">Số lượng</span>
+                        <span class="col-lg-2">Đơn giá</span>
+                    </div>
+                    <hr>
+                    <div class="cart-items2">
+                        
+                    </div>
+                    
+                    <div class="col-lg-10"></div>
+                    <div class="col-lg-2 subtotal1">Tổng tiền:  $0</div>
+                </div>
+                <div class="Cart-bottom" style="clear: both;">
+                    <div class="Cart-Order">
+                        <button type="button" onclick="chuyentrangIndex()">
+                            TIẾP TỤC MUA HÀNG
+                        </button>
+                        <button type="button" onclick="chuyentrang1()">
+                            THANH TOÁN
+                        </button>
+                        <script>
+                            function chuyentrangIndex(){
+                                location="/Index.html";
+                            }
+                            function chuyentrang1(){
+                                const itemCheck = document.getElementsByClassName("cart-item2");
+                                if(itemCheck.length == 0){
+                                    alert("Bạn chưa có sản phẩm trong giỏ hàng, vui lòng thêm vào");
+                                    location ="/Index.html";
+                                }
+                                else {
+                                    location="/ThanhToan.html";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="khuyenmai">
+            <div class="container KhuyenMai" style="padding-top: 20px; padding-bottom: 20px;">
+                <div class="row QC">
+                    <span class="col-lg-6" style="padding-right: 10px ;padding-left: 0;">
+                        <img src="/img/KM1.jpg" alt="" width="100%" height="300px">
+                    </span>
+                    <span class="col-lg-6" style="padding-left: 10px; padding-right: 0;">
+                        <img src="/img/KM2.jpg" alt="" width="100%" height="300px">
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="footerJS">
+        </section>
+        <script>
+            const porductsListEl = document.querySelector(".products-list");
+            const seeMoreBtn = document.querySelector(".see-more-btn");
+    
+
+        </script>
+        <script src="/js/boostraps/bootstrap.bundle.min.js"></script>
+        <script src="/js/boostraps/jquery.min.js"></script>
+        <script src="/js/boostraps/modal.js"></script>
+        
+        <script src="/js/product/header.js"></script>
+        <script src="/js/product/GioHang.js"></script>
+        <script src="/js/product/Search.js"></script>
+        <script src="/js/product/Account.js"></script>
+    </body>
+</html>

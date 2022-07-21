@@ -1,0 +1,307 @@
+img{
+    object-fit: cover;
+}
+
+.SanPham,.tab-content{
+    margin-bottom: 20px;
+}
+
+
+/* --------------- Top-Info Product Chose -------------- */
+
+
+.top-Info h4{
+    font-weight: 550;
+}
+.top-Info ul li{
+    list-style: circle;
+    margin-left: 17px;
+}
+/* --------------- Middle-Info Product Chose -------------- */
+
+.middle-money{
+    border: 1px solid rgba(77, 64, 64, 0.282);
+    border-radius: 5px;
+}
+.middle-money h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(189, 76, 76);
+}
+.middle .VAT{
+    margin: 15px 0;
+}
+.middle .VAT span{  
+    margin: 15px;
+    font-size: 12px;
+}
+
+
+.row{
+    margin: 0;
+}
+
+/* --------------- Order DatHang Product Chose -------------- */
+
+.ThongTinChiTiet{
+    border: 1px solid #d1cfcf;
+    border-radius: 10px;
+}
+
+.order{
+    display: flex;
+    align-items: center ;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.order span{
+    font-size: 17px;
+}
+.order div{
+    margin-left: 15px;
+}
+.order .SL{
+    margin: 0;
+}
+
+.order input[type="number"]{
+    width: 50px;
+    text-align: center;
+}
+
+.order input[type="button"]{
+    padding: 2px 7px;
+    border-radius: 5px;
+    border: 1px solid #7e7e7e;
+    background-color: #4caf50;
+    color: #fff;
+}
+
+
+/* --------------- Button Order Product Chose -------------- */
+
+.DatMua{
+    text-align: center;
+    margin-top: 20px;
+}
+.DatMua button{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid ;
+    border-radius: 5px;
+    background-color: rgb(253, 41, 41);    
+}
+.DatMua button span{
+    font-size: 18px;
+    font-weight: 550;
+    color: #fff;
+    text-shadow: 0 0 1px whitesmoke;
+}
+.DatMua button p{
+    font-size: 13px;
+    color: #fff;
+    margin: 0;
+}
+
+.TraGop{
+    margin-top: 5px;
+    text-align: center;
+}
+.TraGop .visa{
+    width: 49.5%;
+    background-color: rgb(173, 102, 240);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid ;
+}
+.TraGop .hoso{
+    width: 49.5%;
+    background-color: rgb(146, 177, 36);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid ;
+}
+
+.TraGop .visa span,
+.TraGop .hoso span{
+    font-size: 17px;
+    font-weight: 550;
+    color: #fff;
+    text-shadow: 0 0 1px whitesmoke;
+}
+.TraGop .visa p,
+.TraGop .hoso p
+{
+    font-size: 13px;
+    color: #fff;
+}
+
+
+/* --------------- Tab giới thiệu -------------- */
+.GioiThieuSP{
+    clear:both;
+}
+
+.tabHiden ul{
+    display: flex;
+    margin: 0;
+	font-size: 14px;
+	background-color: rgb(207, 247, 248);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tabHiden ul li{
+    color: black;
+}
+.tabHiden ul li a{
+    color: black;
+    font-weight: bold;
+    margin: 0;
+}
+
+.tabHiden ul li:hover{
+    background-color: rgb(240, 75, 75);
+}
+.tabHiden ul li:hover> a{
+    color: #fff;
+    transition: 0.4s;
+}
+
+.imgHinhAnh{
+    text-align: center;
+}
+.imgHinhAnh img{
+    height: 400px;
+    width: 600px;
+    object-fit: cover;   
+}
+#GioiThieu span,
+#KM span,
+#TinTuc span,
+#DanhGia span, p{
+    line-height: 2;
+    font-size: 17px;
+}
+.NoiDungDanhGia{
+    display: flex;
+    align-items: center;
+}
+.NoiDungDanhGia textarea{
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-left: 5px;
+}
+
+.BtnDanhGia button, .btnCMT button{
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 4px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid rgb(32, 38, 37);
+    border-radius: 5px;
+    background-color: #4a4a4a;
+    color: #fff;
+    line-height: 2;
+}
+
+#TinTuc li{
+    margin: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.SLCmt{
+    display: flex;
+    justify-content: space-between;
+}
+.Cmt{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.Cmt input{
+    width: 100%;
+    height: 50px;
+    margin-left: 7px;
+    padding-left: 5px;
+}
+
+#showCart{
+	display: none;
+}
+.cart{
+	position: absolute;
+	z-index: 99;
+	background-color: #fff;
+	right: 0;
+	top: 15%;
+	border: 1px solid;
+}
+.GioHang i:hover > .cart{
+	display: block;
+}
+.TenSP{
+	display: flex;
+	flex-direction: row;
+	padding: 5px 10px;
+}
+.TenSP span{
+	text-align: center;
+}
+
+.cart-item{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.cart-item div{
+	padding: 0;
+}
+.cart-item h4{
+	text-align: center;
+	font-size: 14px;
+	padding: 0;
+}
+.units{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.units .btn{
+	width: 25px;
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+.subtotal{
+	margin: 0 auto;
+	height: 27px;
+	width: 95%;
+	border-radius: 5px;
+	line-height: 2;
+	background-color: #ff6651;
+}
+.checkout{
+	margin: 0 auto;
+	height: 27px;
+	width: 95%;
+	border-radius: 5px;
+	line-height: 2;
+	background-color: blueviolet;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+hr{
+	margin: 10px 0;
+}
+.SPkhac .row2{
+    margin: 0;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/img/icon-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - Đăng ký</title>
+    <meta name="keywords" content="Máy ảnh Sony">
+    <meta name="description" content="Carashop - Chuyên máy ảnh và phụ kiện máy ảnh - Chính hãng">
+    <meta property="og:title" content="Carashop - Máy ảnh chính hãng">
+    <link rel="stylesheet" href="/css/Login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>    
+<body>
+    <div class="container">
+        <!-- login -->
+        <form class="form " id="login" action="/Index.html">
+            <h1 class="form__title">Login</h1>
+            <div class="form__input-group">
+                <input type="text" class="form__input"  name="username" autofocus placeholder="Username or email">
+                <span></span>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" name="password"   autofocus placeholder="Password">
+                <span></span>
+            </div>
+
+            <button class="form__button" id="login1">Continue</button>
+            <p class="form__text">
+                <a href="./" class="form__link" id="forget">Forgot your password?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+        <!-- dang ky -->
+        <form class="form1 form--hidden" id="createAccount" action="/Index.html">
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername"   class="form__input" autofocus placeholder="Username">
+                <span></span>
+            </div>
+            <div class="form__input-group">
+                <input type="email" class="form__input"   autofocus placeholder="Email Address">
+                <span></span>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input"   autofocus placeholder="Password">
+                <span></span>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input"  autofocus placeholder="Confirm password">
+                <span></span>
+            </div>
+            <button class="form__button" id="login2">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+
+        <!-- Forget password -->
+        <form class="form2 form--hidden" id="ForgerAccount" action="/Index.html">
+            <h1 class="form__title">Forget Account</h1>
+            <div class="form__input-group">
+                <input type="text" id="Username"   class="form__input" autofocus placeholder="Username">
+                <span></span>
+            </div>
+            <div class="form__input-group">
+                <input type="email" class="form__input"   autofocus placeholder="Email Address">
+                <span></span>
+            </div>
+            <button class="form__button" id="login3">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin3">Already have an account? Sign in</a>
+            </p>
+        </form>
+
+        <!-- Form change password  -->
+        <form class="form3 form--hidden" id="ChangedPassForgerAccount" action="/Index.html">    
+            <h1 class="form__title">Forget Account</h1>
+            <div class="form__input-group">
+                <input type="password" class="form__input"   autofocus placeholder="Password">
+                <span></span>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input"  autofocus placeholder="Confirm password">
+                <span></span>
+            </div>
+            <button class="form__button" id="linkLogin4">Continue</button>
+            
+        </form>
+    </div>
+    <script>
+        
+    </script>
+
+    <script src="/js/product/Login.js"></script><!--  -->
+    <script src="/js/product/Account.js"></script>
+</body>
+</html>

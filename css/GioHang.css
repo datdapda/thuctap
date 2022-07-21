@@ -1,0 +1,93 @@
+.Cart, .Cart0{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.Cart-form{
+    border: 1px solid #cccccc;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.Cart-form .thead{
+    font-size: 15px;
+}
+.Cart-form .thead th{
+    text-align: center;
+}
+.Cart-form .tbody td{
+    vertical-align: middle;
+}
+
+.Cart-bottom{
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.Cart-Order{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    width: 50%;
+}
+.Cart-Order button, 
+.XacNhan button{
+    padding: 5px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid rgb(32, 38, 37);
+    border-radius: 5px;
+    background-color: #4a4a4a;
+    color: #fff;
+    line-height: 2;
+}
+
+.Cart-Order button:hover{
+    background-color: #58b0da;
+}
+
+
+form input, form .select1{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 7px;
+    line-height: 100px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding-left: 5px;
+
+}
+
+.Cart0,.Cart1{
+    margin-bottom: 20px;
+}
+.Cart0 h4,
+.Cart1 h4, 
+.Cart h4{
+    line-height: 2;
+    font-size: 17px;
+    color: #555555;
+}
+
+.TienDonHang, .PVC, .TongTien {
+    display: flex;
+    width: 96%;
+    justify-content: right;
+    padding:0 15px;
+    text-align: right;
+    margin:15px 0;
+}
+.TienDonHang .TenLoai{
+    width: 200px;
+}
+
+.Money{
+    font-weight: bold;
+    width: 165px;
+}
+
